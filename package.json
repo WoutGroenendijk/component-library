@@ -1,7 +1,7 @@
 {
-  "name": "base-component-library",
+  "name": "component-library",
   "version": "0.1.0",
-  "description": "Base Component Library",
+  "description": "Component Library",
   "author": "Wout Groenendijk",
   "license": "MIT",
   "repository": "",
@@ -14,7 +14,9 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "lint": "eslint --ext .ts --ext .tsx src/"
+    "lint": "eslint --ext .ts --ext .tsx src/",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.9.0",
@@ -22,17 +24,22 @@
   },
   "devDependencies": {
     "@material-ui/core": "^4.9.5",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "@types/react": "^16.9.27",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-react-hooks": "^4.0.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "eslint": "^6.8.0",
     "microbundle-crl": "^0.13.10",
     "react-dom": "^16.13.1",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "typescript": "^3.8.3"
   },
   "files": [
     "dist"

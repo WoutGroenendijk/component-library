@@ -1,4 +1,6 @@
-# Base component - library
+# Component Library
+- Material UI
+- Storybook
 
 
 ## License
