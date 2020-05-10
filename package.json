@@ -17,9 +17,11 @@
     "lint": "eslint --ext .ts --ext .tsx src/"
   },
   "peerDependencies": {
+    "@material-ui/core": "^4.9.0",
     "react": "^16.8.0"
   },
   "devDependencies": {
+    "@material-ui/core": "^4.9.5",
     "@types/react": "^16.9.27",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
