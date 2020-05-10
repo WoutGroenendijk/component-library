@@ -1,0 +1,38 @@
+{
+  "name": "base-component-library",
+  "version": "0.1.0",
+  "description": "Base Component Library",
+  "author": "Wout Groenendijk",
+  "license": "MIT",
+  "repository": "",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "lint": "eslint --ext .ts --ext .tsx src/"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.27",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint": "^6.8.0",
+    "microbundle-crl": "^0.13.10",
+    "react-dom": "^16.13.1",
+    "react": "^16.13.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
